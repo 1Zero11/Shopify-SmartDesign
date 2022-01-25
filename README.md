@@ -1,3 +1,6 @@
 # Shopify-ShowDesign
 
-Запуск SHOP_NAME='smddev-dev-store' API_KEY='ключ' node script.js
+Запуск 
+
+npm install
+SHOP_NAME='smddev-dev-store' API_KEY='ключ' node script.js
