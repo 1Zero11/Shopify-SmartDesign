@@ -1,0 +1,23 @@
+{
+  "name": "shopify-showdesign",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "shopify-api-node": "^3.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1Zero11/Shopify-ShowDesign.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1Zero11/Shopify-ShowDesign/issues"
+  },
+  "homepage": "https://github.com/1Zero11/Shopify-ShowDesign#readme"
+}
