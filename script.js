@@ -16,19 +16,23 @@ async function* makeGenerator() {
             lastid = x[x.length-1].id
         else
             break
-        yield x
+        
+        for(let item of x){
+            yield item
+        }
+        
         
     }
 }
 
-  
+
 //f1()
 
 
 (async function() {
     let list = []
     for await (let num of makeGenerator()) {
-        list = list.concat(num)
+        list.push(num)
     }
 
     console.log(`Количество записей: ${list.length}`)
