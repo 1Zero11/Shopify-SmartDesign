@@ -1,3 +1,3 @@
-# Shopify-ShowDesign
+# Shopify-SmartDesign
 
-Запуск SHOP_NAME='имя магазина' API_KEY='ключ' node script.js
+Запуск SHOP_NAME='smddev-dev-store' API_KEY='ключ' PAGINATION=2 node script.js

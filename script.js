@@ -11,9 +11,9 @@ async function* makeGenerator() {
     let lastid = 0;
     while (true) {
         let x = await shopify.product
-            .list({ limit: 1, since_id: lastid});
+            .list({ limit: process.env.PAGINATION, since_id: lastid});
         if(x.length != 0)
-            lastid = x[0].id
+            lastid = x[x.length-1].id
         else
             break
         yield x
@@ -28,7 +28,7 @@ async function* makeGenerator() {
 (async function() {
     let list = []
     for await (let num of makeGenerator()) {
-      list.push(num)
+        list = list.concat(num)
     }
 
     console.log(`Количество записей: ${list.length}`)
